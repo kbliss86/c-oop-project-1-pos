@@ -67,6 +67,47 @@ namespace GeneralPurposeFunctions
         }  // End of moreInput()
 
         /************************************************************************************
+        * Return a boolean value to indicate if the user has more inputwants to continue to view the menu
+        * ***********************************/
+        public bool moreMenu()
+        {
+            bool isThereInput = false;  // Hold teh return value 
+
+            string whatUserTyped = "";     // Hold what the user enters
+
+            bool getInput = true;   // Control the user interaction loop
+
+            do
+            {
+                // Ask the user if they have any numbers to enter (Y/N)
+                Console.WriteLine("\nWould you like view the menu again? (Y/N)?");
+                whatUserTyped = Console.ReadLine();
+
+                whatUserTyped = whatUserTyped.ToUpper();
+
+                string firstChar = whatUserTyped.Substring(0, 1);
+
+                if (firstChar == "Y")
+                {
+                    getInput = false;
+                    isThereInput = true;
+                }
+                else if (firstChar == "N")
+                {
+                    getInput = false;
+                    isThereInput = false;
+                }
+                else
+                {
+                    getInput = true;
+                }
+            } while (getInput); // Loop while we get input
+
+            return isThereInput;
+
+        }  // End of moreInput()
+
+        /************************************************************************************
          * This method will get a numeric value from the user
          ***********************************************************************************/
 
