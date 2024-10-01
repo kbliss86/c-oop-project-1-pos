@@ -6,33 +6,40 @@ using System.Threading.Tasks;
 
 namespace c_oop_project_1_pos
 {
+    //Add Comments/Fix Comments
     public class Check : ProcessPayment
     {
-        public string CheckNumber { get; set; }//Needed for check processing - reciept display
-        public decimal CheckAmount { get; set; }//needed for check processing - reciept display
-        public decimal CheckChange { get; set; }//needed for check processing - reciept display
-        public decimal Subtotal { get; set; }//needed for reciept display - tax Caclulation
-        public decimal Tax { get; set; }//needed for reciept display - static 6% tax rate
-        public decimal Total { get; set; }//needed for reciept display - total of all goods at purchase + Tax
+        static Validator validation = new Validator();
 
-        public override void ProcessPayments(decimal amount)
+        public string checkNumber;
+        public decimal checkAmount;
+
+        public Check(decimal theSub, decimal theGrand, decimal theTax) : base(theSub, theGrand, theTax) { }
+
+        public override void ProcessPayments()
         {
             //prompt for check number
+            checkNumber = validation.ValidateCheckNumber();
             //prompt for check amount
+            checkAmount = validation.ValidatePaymentAmount(base.GrandTotal);
             //Validate check amount is greater than or equal to amount owed - possibly use the validator class
-            //calculate change
-            return;
         }
-        public override string DisplayReciept(List<Product> purchasedItems)
+        public override void DisplayReciept(List<Product> purchasedItems)
         {
-            //display items purchased
+            //display items purchased            
+            Product.DisplayCartList(purchasedItems);
             //subtotal
+            //Console.WriteLine($"Sub total: ${base.SubTotal}");
             //tax
-            //grand total
+            Console.WriteLine($"Total tax: ${base.TaxTotal}");
+            //grand total            
+            Console.WriteLine($"Grand total: ${base.GrandTotal}");
             //Display check number from process payment
+            Console.WriteLine($"Check number: {checkNumber}");
             //display check amount from process payment
-            //display check change from process payment
-            return "Check Number: " + CheckNumber + " Check Amount: " + CheckAmount + " Check Change: " + CheckChange;//example of reciept display
+            Console.WriteLine($"Check amount: {checkAmount}");
+            //display check change from process payment           
+            Console.WriteLine($"Change due: ${checkAmount - base.GrandTotal}");
         }
     }
 }

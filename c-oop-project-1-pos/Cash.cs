@@ -6,29 +6,39 @@ using System.Threading.Tasks;
 
 namespace c_oop_project_1_pos
 {
+    //Add Comments/Fix Comments
     public class Cash : ProcessPayment
     {
-        public decimal CashTendered { get; set; }
-        public decimal CashChange { get; set; }
-        public decimal Subtotal { get; set; }
-        public decimal Tax { get; set; }
-        public decimal Total { get; set; }
-        public override void ProcessPayments(decimal amount)
+        static Validator validation = new Validator();
+
+        private decimal cashTendered;
+
+
+        public Cash(decimal theSub, decimal theGrand, decimal theTax) : base(theSub, theGrand, theTax) { }
+
+        public override void ProcessPayments()
         {
             //ask for cash amount entered
-            //Validate cash amount is greater than or equal to amount owed - possibly use the validator class
+
+            decimal cashAmount = validation.ValidatePaymentAmount(base.GrandTotal);
+            cashTendered = cashAmount;
             //caclualte change
-            return;
+
         }
-        public override string DisplayReciept(List<Product> purchasedItems)
+
+        public override void DisplayReciept(List<Product> purchasedItems)
         {
-            //display items purchased
+            //display items purchased            
+            Product.DisplayCartList(purchasedItems);
             //subtotal
+            //Console.WriteLine($"Sub total: ${base.SubTotal}");
             //tax
-            //grand total
+            Console.WriteLine($"Total tax: ${base.TaxTotal}");
+            //grand total            
+            Console.WriteLine($"Grand total: ${base.GrandTotal}");
             //cash tendered (From process payment)
             //change due (from process payment)
-            return "Cash Tendered: " + CashTendered;//example of reciept display
+            Console.WriteLine($"Change due: ${cashTendered - base.GrandTotal}");
         }
 
     }
