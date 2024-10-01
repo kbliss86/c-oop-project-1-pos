@@ -8,18 +8,35 @@ using System.Threading.Tasks;
 
 namespace c_oop_project_1_pos
 {
+    /************************************************************************************
+    * Extra Stuff to Add since we have time
+    ************************************************************************************/
+    //Move the subtotal/Grandtotal/Tax into a sub class and create a display total method instead having them on the main
+    //Create a subclass that operates a single "shopping instance" that we call from main instead of having on main - that way we cna have multiple shopping experiences without haveing to close and reopen the program
+        //Code lines 19 - 86 - remove line 37 and leave in Program Loop
+        //add in master do while, runs the POS transaction, then once payment is complete, restart POS
+    //XXX the credit card number
+    //Create a Gift Card Payment Type
+    //change values in CSV to make it a different store
+    //Add config file to customize Console.Outputs ("Hey Welcome to hot topic") etc.
+
     internal class Program
     {    /************************************************************************************
          * Initialize Elements
          ************************************************************************************/
         static CommonlyUsedFunctions myFuncs = new CommonlyUsedFunctions();//Connect to Commonly Used Functions
+        static Validator validation = new Validator();
         static List<Product> productList = new List<Product>();//list to be filled out by GenerateProductList()
         static List<Product> cart = new List<Product> ();//List to generate as user adds items to card
+        const decimal TAX_AMOUNT = .06m;//Move to Sub Class -
         /************************************************************************************
          * Main Program
          ************************************************************************************/
         static void Main(string[] args)
         {
+            decimal subTotal = 0;
+            decimal grandTotal = 0;//***********Move these to sub class - Create New Method for Displaying Cart Totals After user ends loop**********
+            decimal taxTotal = 0;
 
             Console.WriteLine("Welcome to the point of sale terminal");//Welcome Message
             productList = Product.GenerateProductList();//Generate Product List
@@ -54,23 +71,27 @@ namespace c_oop_project_1_pos
                 * Display Items in Card and Running Sub Totals
                 ***********************************************************************************/
                 myFuncs.WriteSeparatorLine("Shopping Cart");//Display Shopping Card
-                Product.DisplayCartList(cart);//Display Contents of Cart from the method in Product class
+                subTotal = Product.DisplayCartList(cart);//Display Contents of Cart from the method in Product class
+
             }
                 while (myFuncs.moreInput()) ;//ASk user if the want to add more items
-
+            taxTotal = Math.Round(subTotal * TAX_AMOUNT, 2);//*********Move these to sub class - Create New Method for Displaying Cart Totals After user ends loop*********
+            grandTotal = taxTotal + subTotal;//***********Move these to sub class - Create New Method for Displaying Cart Totals After user ends loop**********
             /************************************************************************************
             * Ask Payment Section
             ***********************************************************************************/
             myFuncs.WriteSeparatorLine("Payment Section");
-            //prompt user to select payment type - use a switch statment and run different class methods with polymorphism
+            Console.WriteLine($"Sub total: ${subTotal}\nTax total: ${taxTotal}\nGrand total: ${grandTotal}");//***********Move these to sub class - Create New Method for Displaying Cart Totals After user ends loop**********
+            ProcessPayment userPaymentMethod = validation.ValidatePaymentMethod(subTotal, grandTotal, taxTotal);
 
             /************************************************************************************
             * Display Reciept
             ***********************************************************************************/
             myFuncs.WriteSeparatorLine("Reciept Section");
-                //Display Reciept - use a switch statement to display different reciepts based on payment type chosen using polymorphism
+            userPaymentMethod.DisplayReciept(cart);
 
-            
-         }//End Main
+            //Return to the original menu for a new order. (Hint: you’ll want an array or List to keep track of what’s been ordered!)
+
+        }//End Main
     }//End Class
 }//End NameSpace

@@ -47,7 +47,7 @@ namespace c_oop_project_1_pos
                     continue;
 
                 var values = line.Split(',');
-                productList.Add(new Product(int.Parse(values[0]), (string)values[1], (string)values[2], (string)values[3], decimal.Parse(values[4])));
+                productList.Add(new Product(int.Parse(values[0]), values[1], values[2], values[3], decimal.Parse(values[4])));
 
                 if (values.Length != 5)
                 {
@@ -78,7 +78,7 @@ namespace c_oop_project_1_pos
         }
         //public void displayCartList()
         //Display coontents of card and also calculate total item count and sub total of the price of the items
-        public static void DisplayCartList(List<Product> cart)
+        public static decimal DisplayCartList(List<Product> cart)
         {
             decimal subTotal = 0;
             int itemCount = 0;
@@ -96,7 +96,9 @@ namespace c_oop_project_1_pos
                 itemCount++;
             }
             myFuncs.WriteSeparatorLine("Running Totals");//Display a separator line
-            Console.WriteLine($"Total Items: {itemCount} Subtotal: ${subTotal}");
+            Console.WriteLine($"Total Items: {itemCount}\nSubtotal: ${subTotal}");
+            return subTotal;
+            //Add in Running Tax/Running Grand Totals
         }
     }
 }
