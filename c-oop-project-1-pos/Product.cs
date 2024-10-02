@@ -18,6 +18,10 @@ namespace c_oop_project_1_pos
         private string description;
         private decimal price;//Potentially change to string to ensure decimal places
 
+        const decimal TAX_AMOUNT = .06m;
+        decimal taxTotal = 0;
+        decimal grandTotal = 0;
+
         //Add setters if needed
         public int IdNum {get{ return idNum;}}
         public string Name {get{return name;}}
@@ -99,6 +103,17 @@ namespace c_oop_project_1_pos
             Console.WriteLine($"Total Items: {itemCount}\nSubtotal: ${subTotal}");
             return subTotal;
             //Add in Running Tax/Running Grand Totals
+        }
+        //Display the Subtotal, Tax, and Grand Total when called
+        public static (decimal taxTotal, decimal grandTotal) DisplayTotals(decimal subTotal)
+        {
+            decimal taxTotal = 0;
+            decimal grandTotal = 0;
+            const decimal TAX_AMOUNT = .06m;
+            taxTotal = Math.Round(subTotal * TAX_AMOUNT, 2);
+            grandTotal = taxTotal + subTotal;
+            Console.WriteLine($"Sub total: ${subTotal}\nTax total: ${taxTotal}\nGrand total: ${grandTotal}");
+            return (taxTotal, grandTotal);
         }
     }
 }
