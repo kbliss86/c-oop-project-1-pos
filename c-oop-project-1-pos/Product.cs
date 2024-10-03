@@ -19,8 +19,6 @@ namespace c_oop_project_1_pos
         private decimal price;//Potentially change to string to ensure decimal places
 
         const decimal TAX_AMOUNT = .06m;
-        decimal taxTotal = 0;
-        decimal grandTotal = 0;
 
         //Add setters if needed
         public int IdNum {get{ return idNum;}}
@@ -55,7 +53,7 @@ namespace c_oop_project_1_pos
 
                 if (values.Length != 5)
                 {
-                    Console.WriteLine($"Invalid line: {line}");
+                    myFuncs.CenterText($"Invalid line: {line}");
                     continue;
                 }
             }
@@ -64,19 +62,23 @@ namespace c_oop_project_1_pos
         //public void DisplayProductList();
         public static void DisplayProductList()
         {
-            Console.WriteLine("{0,-5} {1,-20} {2,-15} {3,-10} {4,-30}", "ID", "Name", "Category", "Price", "Description");//Provides headers with spaces for table like view
-            //Console.WriteLine("ID\tName\t\tCategory\tPrice\tDescription");//Display Header
-            Console.WriteLine("{0,-5} {1,-20} {2,-15} {3,-10} {4,-30}", "==", "====", "========", "=====", "==========");//provide divider lines with space for table liek view
-            //Console.WriteLine("==\t====\t\t========\t=====\t==========");//Display Header
+            string header = string.Format("{0,-5} {1,-20} {2,-15} {3,-10} {4,-30}", "ID", "Name", "Category", "Price", "Description");
+            myFuncs.CenterText(header);
+            //Console.WriteLine("{0,-5} {1,-20} {2,-15} {3,-10} {4,-30}", "ID", "Name", "Category", "Price", "Description");//Provides headers with spaces for table like view
+            string line = string.Format("{0,-5} {1,-20} {2,-15} {3,-10} {4,-30}", "==", "====", "========", "=====", "==========");
+            myFuncs.CenterText(line);
+            //Console.WriteLine("{0,-5} {1,-20} {2,-15} {3,-10} {4,-30}", "==", "====", "========", "=====", "==========");//provide divider lines with space for table liek view
             foreach (Product currentProduct in productList)
             {
-                Console.WriteLine("{0,-5} {1,-20} {2,-15} {3,-10:C2} {4,-30}",//provides space for column like appearance
+                string content = string.Format("{0,-5} {1,-20} {2,-15} {3,-10:C2} {4,-30}",
+                //Console.WriteLine("{0,-5} {1,-20} {2,-15} {3,-10:C2} {4,-30}",//provides space for column like appearance
                     currentProduct.IdNum + ".", // ID
                     currentProduct.Name,        // Name
                     currentProduct.Category,    // Category
                     currentProduct.Price,       // Price (with currency format)
                     currentProduct.Description  // Description
-);
+                );
+                myFuncs.CenterText(content);
                 //Console.WriteLine($"{currentProduct.IdNum}.\t{currentProduct.Name}\t\t{currentProduct.Category}\t{currentProduct.Price:C}\t{currentProduct.Description}");
             }
         }
@@ -86,21 +88,28 @@ namespace c_oop_project_1_pos
         {
             decimal subTotal = 0;
             int itemCount = 0;
-            Console.WriteLine("{0,-5} {1,-20} {2,-10}", "ID", "Name", "Price");
-            Console.WriteLine("{0,-5} {1,-20} {2,-10}", "==", "====", "=====");
+            //Console.WriteLine("{0,-5} {1,-20} {2,-10}", "ID", "Name", "Price");
+            //Console.WriteLine("{0,-5} {1,-20} {2,-10}", "==", "====", "=====");
+            string header = string.Format("{0,-5} {1,-20} {2,-10}", "ID", "Name", "Price");
+            myFuncs.CenterText(header);
+            string line = string.Format("{0,-5} {1,-20} {2,-10}", "==", "====", "=====");
+
             foreach (Product currentProduct in cart)
             {
-                Console.WriteLine("{0,-5} {1,-20} {2,-10:C2}",
+                string content = string.Format("{0,-5} {1,-20} {2,-10:C2}",
+                //Console.WriteLine("{0,-5} {1,-20} {2,-10:C2}",
                     currentProduct.IdNum + ".",  // ID
                     currentProduct.Name,         // Name
                     currentProduct.Price         // Price (formatted as currency)
-);
+                );
+                myFuncs.CenterText(content);
                 //Console.WriteLine($"{currentProduct.IdNum}. {currentProduct.Name} Price: ${currentProduct.Price}");//Siplay Contents of Cart (Make this a method in Product
                 subTotal += currentProduct.Price;
                 itemCount++;
             }
             myFuncs.WriteSeparatorLine("Running Totals");//Display a separator line
-            Console.WriteLine($"Total Items: {itemCount}\nSubtotal: ${subTotal}");
+            myFuncs.CenterText($"Total Items: {itemCount}");
+            myFuncs.CenterText($"Subtotal: ${subTotal}");
             return subTotal;
             //Add in Running Tax/Running Grand Totals
         }
@@ -112,7 +121,9 @@ namespace c_oop_project_1_pos
             const decimal TAX_AMOUNT = .06m;
             taxTotal = Math.Round(subTotal * TAX_AMOUNT, 2);
             grandTotal = taxTotal + subTotal;
-            Console.WriteLine($"Sub total: ${subTotal}\nTax total: ${taxTotal}\nGrand total: ${grandTotal}");
+            myFuncs.CenterText($"Sub total: ${subTotal}");
+            myFuncs.CenterText($"Tax total: ${taxTotal}");
+            myFuncs.CenterText($"Grand total: ${grandTotal}");
             return (taxTotal, grandTotal);
         }
     }

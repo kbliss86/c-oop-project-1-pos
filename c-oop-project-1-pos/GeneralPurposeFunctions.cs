@@ -10,9 +10,10 @@ namespace GeneralPurposeFunctions
          ************************************************************************************/
         public void WriteSeparatorLine(string message)
         {
-            Console.WriteLine("\n----------------------------------------------------------------------------");
-            Console.WriteLine($"{message}");
-            Console.WriteLine("----------------------------------------------------------------------------\n");
+            Console.WriteLine("");
+            CenterText("------------------------------------------------------------------------------");
+            CenterText($"{message}");
+            CenterText("----------------------------------------------------------------------------\n");
 
         } // End of WriteSeparatorLine()
 
@@ -21,7 +22,8 @@ namespace GeneralPurposeFunctions
          ***********************************************************************************/
         public void PauseProgram()
         {
-            Console.WriteLine("\nPress enter to continue...");
+            Console.WriteLine("");
+            CenterText("Press enter to continue...");
             Console.ReadLine();
         } // End of PauseProgram()
 
@@ -39,8 +41,10 @@ namespace GeneralPurposeFunctions
             do
             {
                 // Ask the user if they have any numbers to enter (Y/N)
-                Console.WriteLine("\nWould you like to continue shopping? (Y/N)?");
-                whatUserTyped = Console.ReadLine();
+                Console.WriteLine("");
+                CenterText("Would you like to continue shopping? (Y/N)?");
+                whatUserTyped = CenteredInput();
+                //whatUserTyped = Console.ReadLine();
 
                 whatUserTyped = whatUserTyped.ToUpper();
 
@@ -80,8 +84,10 @@ namespace GeneralPurposeFunctions
             do
             {
                 // Ask the user if they have any numbers to enter (Y/N)
-                Console.WriteLine("\nWould you like view the menu again? (Y/N)?");
-                whatUserTyped = Console.ReadLine();
+                Console.WriteLine("");
+                CenterText("Would you like view the menu again? (Y/N)?");
+                whatUserTyped = CenteredInput();
+                //whatUserTyped = Console.ReadLine();
 
                 whatUserTyped = whatUserTyped.ToUpper();
 
@@ -121,8 +127,10 @@ namespace GeneralPurposeFunctions
             do
             {
                 // Ask the user if they have any numbers to enter (Y/N)
-                Console.WriteLine("\nWould you like to start another transaction? (Y/N)?");
-                whatUserTyped = Console.ReadLine();
+                Console.WriteLine("");
+                CenterText("Would you like to start another transaction? (Y/N)?");
+                whatUserTyped = CenteredInput();
+                //whatUserTyped = Console.ReadLine();
 
                 whatUserTyped = whatUserTyped.ToUpper();
 
@@ -166,10 +174,11 @@ namespace GeneralPurposeFunctions
             do  // do loop is used so we ask the user for a number at least once
             {
                 // Prompt the user to enter a numeric value
-                Console.WriteLine("Please enter a number");
+                CenterText("Please enter a number");
 
                 // Get the input from the user
-                string userInput = Console.ReadLine();
+                string userInput = CenteredInput();
+                //string userInput = Console.ReadLine();
 
                 try // We want to handle an Exception that might occur in this block of code
                 {
@@ -180,16 +189,49 @@ namespace GeneralPurposeFunctions
                 // catch (Exception exceptionBlock) will handle every Exception that can occur
                 catch (FormatException exceptionBlock) // Handle a FormatException in previous try block
                 {
-                    Console.WriteLine("\n----- Uh-oh Uh-oh Uh-oh ------");
-                    Console.WriteLine("There is problem with " + userInput);
-                    Console.WriteLine(exceptionBlock.Message); // Display the system message for the error
-                    Console.WriteLine("------ Uh-oh Uh-oh Uh-oh ------\n");
+                    CenterText("\n----- Uh-oh Uh-oh Uh-oh ------");
+                    CenterText("There is problem with " + userInput);
+                    CenterText(exceptionBlock.Message); // Display the system message for the error
+                    CenterText("------ Uh-oh Uh-oh Uh-oh ------\n");
                 }
             } while (!isValidNumber); // Loop while we don't have a valid number
 
             // return the double value from the user input
             return theValue;
         } // End of getANumber() method
+
+        /************************************************************************************
+         * Method to center-align a string based on the console width
+         ***********************************************************************************/
+        public void CenterText(string text)
+        {
+            // Get the current console width
+            int windowWidth = Console.WindowWidth;
+
+            // Calculate the starting position to center the text
+            int leftPadding = (windowWidth - text.Length) / 2;
+
+            // Print the line with leading spaces to center it
+            Console.WriteLine(new string(' ', Math.Max(leftPadding, 0)) + text);
+        }
+
+        public string CenteredInput()
+        {
+            string input = "";
+            int windowWidth = Console.WindowWidth;
+            int cursorLeft = (windowWidth - input.Length) / 2;
+
+            //Set Cursos position to similate Centered input
+            Console.SetCursorPosition(cursorLeft, Console.CursorTop);
+
+            //Capture Input
+            input = Console.ReadLine();
+
+            //Center users input
+            //CenterText(input);
+
+            return input;
+        }
 
     } // End of class GeneralPurposeFunctions
 }

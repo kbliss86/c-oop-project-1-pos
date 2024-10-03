@@ -22,8 +22,7 @@ namespace c_oop_project_1_pos
          ************************************************************************************/
         //static void Main(string[] args)
         public ShoppingSession()//Constructor
-        {
-            decimal subTotal = 0;
+        {           
             //decimal grandTotal = 0;//***********Move these to sub class - Create New Method for Displaying Cart Totals After user ends loop**********  - REMOVE THIS CODE
             //decimal taxTotal = 0; - REMOVE THIS CODE
             productList = Product.GenerateProductList();//Generate Product List
@@ -31,7 +30,8 @@ namespace c_oop_project_1_pos
         }
         public void StartShopping()
         {
-            Console.WriteLine("Welcome to the point of sale terminal");//Welcome Message
+            myFuncs.CenterText("Welcome to the point of sale terminal");//Welcome Message
+            Art.DisplayCustomLogo();
 
             do//do-while loop - prompt user to pick an item by the item number in the list
             {
@@ -52,9 +52,10 @@ namespace c_oop_project_1_pos
                 /************************************************************************************
                 * Add Items to Card
                 ***********************************************************************************/
-                Console.WriteLine("Please Select an Item # from the menu to add to your cart: ");//Prompt user to select an item
+                Console.WriteLine("");
+                myFuncs.CenterText("Please Select an Item # from the menu to add to your cart: ");//Prompt user to select an item
                 int item = myFuncs.GetANumber();//Item that will be added
-                Console.WriteLine("How many do you want to add to your cart?");//Prompt user for quantity
+                myFuncs.CenterText("How many do you want to add to your cart?");//Prompt user for quantity
                 int quantity = myFuncs.GetANumber();//Quantitity of items to be added
                 for (int i = 0; i < quantity; i++)//Loop to add quantity of items user selected
                 {
