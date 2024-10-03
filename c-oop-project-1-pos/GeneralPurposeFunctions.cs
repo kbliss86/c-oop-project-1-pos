@@ -41,8 +41,8 @@ namespace GeneralPurposeFunctions
             do
             {
                 // Ask the user if they have any numbers to enter (Y/N)
-                Console.WriteLine("");
-                CenterText("Would you like to continue shopping? (Y/N)?");
+                //Console.WriteLine("");
+                //CenterText("Would you like to continue shopping? (Y/N)?");//REMOVE THIS AND CONDENSE WITH OTHER METHODS
                 whatUserTyped = CenteredInput();
                 //whatUserTyped = Console.ReadLine();
 
@@ -84,8 +84,8 @@ namespace GeneralPurposeFunctions
             do
             {
                 // Ask the user if they have any numbers to enter (Y/N)
-                Console.WriteLine("");
-                CenterText("Would you like view the menu again? (Y/N)?");
+                //Console.WriteLine("");
+               //CenterText("Would you like view the menu again? (Y/N)?");//REMOVE THIS AND CONDENSE WITH OTHER METHODS
                 whatUserTyped = CenteredInput();
                 //whatUserTyped = Console.ReadLine();
 
@@ -127,8 +127,8 @@ namespace GeneralPurposeFunctions
             do
             {
                 // Ask the user if they have any numbers to enter (Y/N)
-                Console.WriteLine("");
-                CenterText("Would you like to start another transaction? (Y/N)?");
+                //Console.WriteLine("");
+                //CenterText("Would you like to start another transaction? (Y/N)?");//REMOVE THIS AND CONDENSE WITH OTHER METHODS
                 whatUserTyped = CenteredInput();
                 //whatUserTyped = Console.ReadLine();
 

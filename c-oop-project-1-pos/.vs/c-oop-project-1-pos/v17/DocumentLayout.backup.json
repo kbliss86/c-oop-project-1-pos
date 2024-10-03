@@ -1,50 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\",
+  "WorkspaceRootPath": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\generalpurposefunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:generalpurposefunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\shoppingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\shoppingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:shoppingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|c:\\users\\ethan\\workspace\\lab_repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\art.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:art.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\generalpurposefunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:generalpurposefunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\cash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:cash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\logo.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:logo.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|c:\\users\\ethan\\workspace\\lab_repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\check.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:check.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|c:\\users\\ethan\\workspace\\lab_repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\config.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\config.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:config.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|c:\\users\\ethan\\workspace\\lab_repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\logo.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:logo.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\art.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:art.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|c:\\users\\kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\check.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:check.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\cash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:cash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|c:\\users\\kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\processpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:processpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64447DD2-0AC3-482D-838D-93C926DF5A32}|c-oop-project-1-pos.csproj|solutionrelative:product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,8 +58,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 16,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -65,12 +73,33 @@
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
+              "Title": "GeneralPurposeFunctions.cs",
+              "DocumentMoniker": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\GeneralPurposeFunctions.cs",
+              "RelativeDocumentMoniker": "GeneralPurposeFunctions.cs",
+              "ToolTip": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\GeneralPurposeFunctions.cs",
+              "RelativeToolTip": "GeneralPurposeFunctions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T00:53:36.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Logo.txt",
-              "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Logo.txt",
+              "DocumentMoniker": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Logo.txt",
               "RelativeDocumentMoniker": "Logo.txt",
-              "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Logo.txt",
+              "ToolTip": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Logo.txt",
               "RelativeToolTip": "Logo.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
@@ -79,11 +108,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "Config.txt",
-              "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Config.txt",
+              "DocumentMoniker": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Config.txt",
               "RelativeDocumentMoniker": "Config.txt",
-              "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Config.txt",
+              "ToolTip": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Config.txt",
               "RelativeToolTip": "Config.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
@@ -94,121 +123,117 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Art.cs",
-              "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Art.cs",
+              "DocumentMoniker": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Art.cs",
               "RelativeDocumentMoniker": "Art.cs",
-              "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Art.cs",
+              "ToolTip": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Art.cs",
               "RelativeToolTip": "Art.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAUwDcAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T22:56:37.668Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Validator.cs",
-              "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Validator.cs",
+              "DocumentMoniker": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Validator.cs",
               "RelativeDocumentMoniker": "Validator.cs",
-              "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Validator.cs",
+              "ToolTip": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Validator.cs",
               "RelativeToolTip": "Validator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAkwBMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T00:48:29.862Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GeneralPurposeFunctions.cs",
-              "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\GeneralPurposeFunctions.cs",
-              "RelativeDocumentMoniker": "GeneralPurposeFunctions.cs",
-              "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\GeneralPurposeFunctions.cs",
-              "RelativeToolTip": "GeneralPurposeFunctions.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAADwv00AAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T00:53:36.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Card.cs",
-              "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Card.cs",
+              "DocumentMoniker": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Card.cs",
               "RelativeDocumentMoniker": "Card.cs",
-              "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Card.cs",
+              "ToolTip": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Card.cs",
               "RelativeToolTip": "Card.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T22:53:34.531Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
+              "Title": "Check.cs",
+              "DocumentMoniker": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Check.cs",
+              "RelativeDocumentMoniker": "Check.cs",
+              "ToolTip": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Check.cs",
+              "RelativeToolTip": "Check.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCEAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T22:53:20.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Cash.cs",
-              "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Cash.cs",
+              "DocumentMoniker": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Cash.cs",
               "RelativeDocumentMoniker": "Cash.cs",
-              "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Cash.cs",
+              "ToolTip": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Cash.cs",
               "RelativeToolTip": "Cash.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCMAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T22:52:49.595Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAQwCsAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "ProcessPayment.cs",
+              "DocumentMoniker": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\ProcessPayment.cs",
+              "RelativeDocumentMoniker": "ProcessPayment.cs",
+              "ToolTip": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\ProcessPayment.cs",
+              "RelativeToolTip": "ProcessPayment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T00:59:23.927Z",
+              "WhenOpened": "2024-10-03T09:20:35.885Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Product.cs",
+              "DocumentMoniker": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Product.cs",
               "RelativeDocumentMoniker": "Product.cs",
-              "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Product.cs",
+              "ToolTip": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Product.cs",
               "RelativeToolTip": "Product.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAIwFwAAABbAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAUwGIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T22:51:46.719Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "ShoppingSession.cs",
-              "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\ShoppingSession.cs",
+              "DocumentMoniker": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\ShoppingSession.cs",
               "RelativeDocumentMoniker": "ShoppingSession.cs",
-              "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\ShoppingSession.cs",
+              "ToolTip": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\ShoppingSession.cs",
               "RelativeToolTip": "ShoppingSession.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T06:18:34.019Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Check.cs",
-              "DocumentMoniker": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Check.cs",
-              "RelativeDocumentMoniker": "Check.cs",
-              "ToolTip": "C:\\Users\\Ethan\\workspace\\Lab_Repos\\c-oop-project-1-pos\\c-oop-project-1-pos\\Check.cs",
-              "RelativeToolTip": "Check.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Kendall\\bootcamp_c_sharp\\c-oop-project-1-pos\\c-oop-project-1-pos\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwDUAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T22:53:20.058Z",
+              "WhenOpened": "2024-09-26T00:59:23.927Z",
               "EditorCaption": ""
             }
           ]

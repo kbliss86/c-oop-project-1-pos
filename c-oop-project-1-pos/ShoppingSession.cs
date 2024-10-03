@@ -16,15 +16,11 @@ namespace c_oop_project_1_pos
         static List<Product> productList = new List<Product>();//list to be filled out by GenerateProductList()
         static List<Product> cart = new List<Product>();//List to generate as user adds items to card
         static decimal subTotal;
-        //const decimal TAX_AMOUNT = .06m;//Move to Sub Class - REMOVE THIS CODE
         /************************************************************************************
          * Main Program
          ************************************************************************************/
-        //static void Main(string[] args)
         public ShoppingSession()//Constructor
         {           
-            //decimal grandTotal = 0;//***********Move these to sub class - Create New Method for Displaying Cart Totals After user ends loop**********  - REMOVE THIS CODE
-            //decimal taxTotal = 0; - REMOVE THIS CODE
             productList = Product.GenerateProductList();//Generate Product List
             cart = new List<Product>();//Clear out the cart for a new order
         }
@@ -41,8 +37,12 @@ namespace c_oop_project_1_pos
                 bool displayProducts = true;//bool variable for if the user needs to see the menu again - ask user if they want to see the menu again after selecting they want to add more items
                 if (cart.Count > 0)//if cart count is greater than one - ask question - if not then skip this and display the menu
                 {
+                    //ASK USER IF THEY WANT TO SEE MENU HERE INSTEAD OF IN THE "MoreMenu" METHOD WE CAN REDUCE THE AMOUNT OF METHODS BY PUTING THE QUESTION HERE
+                    Console.WriteLine("");
+                    myFuncs.CenterText("Would you like view the menu again? (Y/N)?");
+
                     //Ask user to see if they want to view the menu
-                    displayProducts = myFuncs.moreMenu();
+                    displayProducts = myFuncs.moreInput();
                 }
                 if (displayProducts)//if user wants to look at menu - display it - otherwise skip it and just add more stuff
                 {
@@ -66,12 +66,12 @@ namespace c_oop_project_1_pos
                 ***********************************************************************************/
                 myFuncs.WriteSeparatorLine("Shopping Cart");//Display Shopping Card
                 subTotal = Product.DisplayCartList(cart);//Display Contents of Cart from the method in Product class
-                //Product.DisplayCartList(cart);//Display Contents of Cart from the method in Product class - Returns the Subtotal
 
+                //ASK USER IF THEY WANT MORE ITEMS HERE INSTEAD OF IN THE "MoreInput" METHOD WE CAN REDUCE THE AMOUNT OF METHODS BY PUTING THE QUESTION HERE
+                Console.WriteLine("");
+                myFuncs.CenterText("Would you like to continue shopping? (Y/N)?");
             }
             while (myFuncs.moreInput());//ASk user if the want to add more items
-            //taxTotal = Math.Round(subTotal * TAX_AMOUNT, 2);//*********Move these to sub class - Create New Method for Displaying Cart Totals After user ends loop********* - REMOVE THIS CODE
-            //grandTotal = taxTotal + subTotal;//***********Move these to sub class - Create New Method for Displaying Cart Totals After user ends loop********** - REMOVE THIS CODE
 
             /************************************************************************************
             * Display Subtotal, tax, grand total using product class method
@@ -83,7 +83,6 @@ namespace c_oop_project_1_pos
             * Ask Payment Section
             ***********************************************************************************/
             myFuncs.WriteSeparatorLine("Payment Section");
-            //Console.WriteLine($"Sub total: ${subTotal}\nTax total: ${taxTotal}\nGrand total: ${grandTotal}");//***********Move these to sub class - Create New Method for Displaying Cart Totals After user ends loop********** - REMOVE THIS CODE
             ProcessPayment userPaymentMethod = validation.ValidatePaymentMethod(subTotal, grandTotal, taxTotal);
 
             /************************************************************************************

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace c_oop_project_1_pos
 {
+    //ADD COMMENTS
     public abstract class ProcessPayment
     {
         private decimal subTotal;

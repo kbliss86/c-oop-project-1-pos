@@ -19,7 +19,8 @@ namespace c_oop_project_1_pos
     internal static class Program
     {
         static CommonlyUsedFunctions myFuncs = new CommonlyUsedFunctions(); //Can probably getting rid of
-
+        //Code used to Open Console at full Screen size - this helps with centering the text/input in the center of the app
+        //--Console Code Start--\\
         [DllImport("kernel32.dll", ExactSpelling = true)]
         private static extern IntPtr GetConsoleWindow();
 
@@ -27,11 +28,14 @@ namespace c_oop_project_1_pos
         private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 
         private const int SW_MAXIMIZE = 3;
+        //--Console Code End--\\
         static void Main(string[] args)
         {
+            //Open Console at full Screen size
             IntPtr handle = GetConsoleWindow();
             ShowWindow(handle, SW_MAXIMIZE);
 
+            //Generate the POS image
             Art.GeneratePosImage();
             //bool to control session loop
             bool keepShopping = true;
@@ -42,8 +46,12 @@ namespace c_oop_project_1_pos
                 ShoppingSession session = new ShoppingSession();
                 //Start the shopping session
                 session.StartShopping();
+                //ASK USER IF THEY WANT MORE ITEMS HERE INSTEAD OF IN THE "MoreInput" METHOD WE CAN REDUCE THE AMOUNT OF METHODS BY PUTING THE QUESTION HERE
+                // Ask the user if they have any numbers to enter (Y/N)
+                Console.WriteLine("");
+                myFuncs.CenterText("Would you like to start another transaction? (Y/N)?");
                 //Ask the user if they want to keep shopping
-                keepShopping = myFuncs.moreSession();
+                keepShopping = myFuncs.moreInput();
             }
             while (keepShopping);//End do-while loop
 

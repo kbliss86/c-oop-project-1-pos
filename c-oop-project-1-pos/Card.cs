@@ -40,9 +40,7 @@ namespace c_oop_project_1_pos
         {
             Art.GenerateDollarImage();
             //display items purchased
-            Product.DisplayCartList(purchasedItems);
-            //subtotal
-            //myFuncs.CenterText($"Sub total: ${base.SubTotal}");
+            Product.DisplayCartList(purchasedItems);//subtotal
             //tax
             myFuncs.CenterText($"Total tax: ${base.TaxTotal}");
             //grand total            
