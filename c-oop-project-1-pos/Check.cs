@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GeneralPurposeFunctions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,8 @@ namespace c_oop_project_1_pos
     //Add Comments/Fix Comments
     public class Check : ProcessPayment
     {
+        static CommonlyUsedFunctions myFuncs = new CommonlyUsedFunctions();
+
         static Validator validation = new Validator();
 
         public string checkNumber;
@@ -26,20 +29,21 @@ namespace c_oop_project_1_pos
         }
         public override void DisplayReciept(List<Product> purchasedItems)
         {
+            Art.GenerateDollarImage();
             //display items purchased            
             Product.DisplayCartList(purchasedItems);
             //subtotal
             //Console.WriteLine($"Sub total: ${base.SubTotal}");
             //tax
-            Console.WriteLine($"Total tax: ${base.TaxTotal}");
+            myFuncs.CenterText($"Total tax: ${base.TaxTotal}");
             //grand total            
-            Console.WriteLine($"Grand total: ${base.GrandTotal}");
+            myFuncs.CenterText($"Grand total: ${base.GrandTotal}");
             //Display check number from process payment
-            Console.WriteLine($"Check number: {checkNumber}");
+            myFuncs.CenterText($"Check number: {checkNumber}");
             //display check amount from process payment
-            Console.WriteLine($"Check amount: {checkAmount}");
+            myFuncs.CenterText($"Check amount: {checkAmount}");
             //display check change from process payment           
-            Console.WriteLine($"Change due: ${checkAmount - base.GrandTotal}");
+            myFuncs.CenterText($"Change due: ${checkAmount - base.GrandTotal}");
         }
     }
 }

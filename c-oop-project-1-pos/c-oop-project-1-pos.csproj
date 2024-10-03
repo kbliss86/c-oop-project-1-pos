@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Art.cs" />
     <Compile Include="Card.cs" />
     <Compile Include="Cash.cs" />
     <Compile Include="Check.cs" />
@@ -57,6 +58,10 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Random_Grocery_List.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo.txt" />
+    <Content Include="Config.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

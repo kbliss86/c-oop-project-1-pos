@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GeneralPurposeFunctions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,8 @@ namespace c_oop_project_1_pos
     //Add Comments/Fix Comments
     public class Cash : ProcessPayment
     {
+        static CommonlyUsedFunctions myFuncs = new CommonlyUsedFunctions();
+
         static Validator validation = new Validator();
 
         private decimal cashTendered;
@@ -28,17 +31,18 @@ namespace c_oop_project_1_pos
 
         public override void DisplayReciept(List<Product> purchasedItems)
         {
+            Art.GenerateDollarImage();
             //display items purchased            
             Product.DisplayCartList(purchasedItems);
             //subtotal
             //Console.WriteLine($"Sub total: ${base.SubTotal}");
             //tax
-            Console.WriteLine($"Total tax: ${base.TaxTotal}");
+            myFuncs.CenterText($"Total tax: ${base.TaxTotal}");
             //grand total            
-            Console.WriteLine($"Grand total: ${base.GrandTotal}");
+            myFuncs.CenterText($"Grand total: ${base.GrandTotal}");
             //cash tendered (From process payment)
             //change due (from process payment)
-            Console.WriteLine($"Change due: ${cashTendered - base.GrandTotal}");
+            myFuncs.CenterText($"Change due: ${cashTendered - base.GrandTotal}");
         }
 
     }
