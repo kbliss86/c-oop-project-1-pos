@@ -33,14 +33,11 @@ namespace c_oop_project_1_pos
         {
             Art.GenerateDollarImage();
             //display items purchased            
-            Product.DisplayCartList(purchasedItems);
-            //subtotal
-            //Console.WriteLine($"Sub total: ${base.SubTotal}");
+            Product.DisplayCartList(purchasedItems);//subtotal
             //tax
             myFuncs.CenterText($"Total tax: ${base.TaxTotal}");
             //grand total            
             myFuncs.CenterText($"Grand total: ${base.GrandTotal}");
-            //cash tendered (From process payment)
             //change due (from process payment)
             myFuncs.CenterText($"Change due: ${cashTendered - base.GrandTotal}");
         }
