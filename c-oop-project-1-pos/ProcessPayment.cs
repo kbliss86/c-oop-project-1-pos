@@ -15,6 +15,7 @@ namespace c_oop_project_1_pos
 
         private decimal taxTotal;
 
+        //getters to access private properties from sub classes
         public decimal SubTotal
         {
             get { return subTotal; }
@@ -33,9 +34,9 @@ namespace c_oop_project_1_pos
             grandTotal = theGrand;
             taxTotal = theTax;
         }
-
+        //public class for payment types to use
         public abstract void ProcessPayments();
-
+        //public class for payment types to use - provide the product list
         public abstract void DisplayReciept(List<Product> purchasedItems);
     }
 

@@ -16,11 +16,10 @@ namespace c_oop_project_1_pos
         private string name;
         private string category;
         private string description;
-        private decimal price;//Potentially change to string to ensure decimal places
+        private decimal price;
 
-        const decimal TAX_AMOUNT = .06m;
-
-        //Add setters if needed
+        const decimal TAX_AMOUNT = .06m;//Constant used for calculating sales tax
+       
         public int IdNum {get{ return idNum;}}
         public string Name {get{return name;}}
         public string Category {get{return category;}}
@@ -38,7 +37,8 @@ namespace c_oop_project_1_pos
 
         //Generate List from CSV
         static List<Product> productList = new List<Product>();//list to be filled out by GenerateProductList()
-        //public void GenerateProductList();
+        
+        //Uses CSV to generate a list of products available
         public static List<Product> GenerateProductList()
         {
             StreamReader productReader = new StreamReader("../../Random_Grocery_List.csv");
@@ -57,9 +57,11 @@ namespace c_oop_project_1_pos
                     continue;
                 }
             }
+            productReader.Close();
             return productList;
         }
-        //public void DisplayProductList();
+        
+        //Loops through the product list and displays each item (formatted into columns)
         public static void DisplayProductList()
         {
             string header = string.Format("{0,-5} {1,-20} {2,-15} {3,-10} {4,-30}", "ID", "Name", "Category", "Price", "Description");
@@ -78,7 +80,6 @@ namespace c_oop_project_1_pos
                 myFuncs.CenterText(content);
             }
         }
-        //public void displayCartList()
         //Display coontents of card and also calculate total item count and sub total of the price of the items
         public static decimal DisplayCartList(List<Product> cart)
         {
@@ -91,7 +92,6 @@ namespace c_oop_project_1_pos
             foreach (Product currentProduct in cart)
             {
                 string content = string.Format("{0,-5} {1,-20} {2,-10:C2}",
-                //Console.WriteLine("{0,-5} {1,-20} {2,-10:C2}",
                     currentProduct.IdNum + ".",  // ID
                     currentProduct.Name,         // Name
                     currentProduct.Price         // Price (formatted as currency)
@@ -100,11 +100,10 @@ namespace c_oop_project_1_pos
                 subTotal += currentProduct.Price;
                 itemCount++;
             }
-            myFuncs.WriteSeparatorLine("Running Totals");//Display a separator line
+            myFuncs.WriteSeparatorLine("Totals");//Display a separator line
             myFuncs.CenterText($"Total Items: {itemCount}");
             myFuncs.CenterText($"Subtotal: ${subTotal}");
             return subTotal;
-            //Add in Running Tax/Running Grand Totals
         }
         //Display the Subtotal, Tax, and Grand Total when called
         public static (decimal taxTotal, decimal grandTotal) DisplayTotals(decimal subTotal)

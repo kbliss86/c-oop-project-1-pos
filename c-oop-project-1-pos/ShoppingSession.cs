@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace c_oop_project_1_pos
 {
-    internal class ShoppingSession
+    public class ShoppingSession
     {    /************************************************************************************
          * Initialize Elements
          ************************************************************************************/
@@ -26,8 +26,14 @@ namespace c_oop_project_1_pos
         }
         public void StartShopping()
         {
-            myFuncs.CenterText("Welcome to the point of sale terminal");//Welcome Message
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            myFuncs.CenterText($"Welcome to {Art.DisplayCompanyName()}");//Welcome Message
             Art.DisplayCustomLogo();
+
+            //puase program to user can admire the logo
+            myFuncs.PauseProgram();
 
             do//do-while loop - prompt user to pick an item by the item number in the list
             {
@@ -37,7 +43,7 @@ namespace c_oop_project_1_pos
                 bool displayProducts = true;//bool variable for if the user needs to see the menu again - ask user if they want to see the menu again after selecting they want to add more items
                 if (cart.Count > 0)//if cart count is greater than one - ask question - if not then skip this and display the menu
                 {
-                    //ASK USER IF THEY WANT TO SEE MENU HERE INSTEAD OF IN THE "MoreMenu" METHOD WE CAN REDUCE THE AMOUNT OF METHODS BY PUTING THE QUESTION HERE
+                    
                     Console.WriteLine("");
                     myFuncs.CenterText("Would you like view the menu again? (Y/N)?");
 
@@ -55,6 +61,11 @@ namespace c_oop_project_1_pos
                 Console.WriteLine("");
                 myFuncs.CenterText("Please Select an Item # from the menu to add to your cart: ");//Prompt user to select an item
                 int item = myFuncs.GetANumber();//Item that will be added
+                while(item > productList.Count() || item < 0)
+                {
+                    myFuncs.CenterText("Please Enter a Valid Number from the menu list");
+                    item = myFuncs.GetANumber();
+                }
                 myFuncs.CenterText("How many do you want to add to your cart?");//Prompt user for quantity
                 int quantity = myFuncs.GetANumber();//Quantitity of items to be added
                 for (int i = 0; i < quantity; i++)//Loop to add quantity of items user selected
@@ -67,7 +78,7 @@ namespace c_oop_project_1_pos
                 myFuncs.WriteSeparatorLine("Shopping Cart");//Display Shopping Card
                 subTotal = Product.DisplayCartList(cart);//Display Contents of Cart from the method in Product class
 
-                //ASK USER IF THEY WANT MORE ITEMS HERE INSTEAD OF IN THE "MoreInput" METHOD WE CAN REDUCE THE AMOUNT OF METHODS BY PUTING THE QUESTION HERE
+                
                 Console.WriteLine("");
                 myFuncs.CenterText("Would you like to continue shopping? (Y/N)?");
             }
@@ -76,7 +87,7 @@ namespace c_oop_project_1_pos
             /************************************************************************************
             * Display Subtotal, tax, grand total using product class method
             ***********************************************************************************/
-            myFuncs.WriteSeparatorLine("Grand Totals - From Method");//Display a separator line
+            myFuncs.WriteSeparatorLine("Grand Totals");//Display a separator line
             var (taxTotal, grandTotal) = Product.DisplayTotals(subTotal);//Display Totals from the method in Product class takes in subtotal and returns grand total and Tax total
 
             /************************************************************************************
@@ -89,9 +100,11 @@ namespace c_oop_project_1_pos
             * Display Reciept
             ***********************************************************************************/
             myFuncs.WriteSeparatorLine("Reciept Section");
+            myFuncs.CenterText(Art.DisplayCompanyName());
             userPaymentMethod.DisplayReciept(cart);
 
             //Return to the original menu for a new order. Clear Card, Clear SubTotal
+            productList.Clear();
             cart.Clear();
             subTotal = 0;
         }//End Main

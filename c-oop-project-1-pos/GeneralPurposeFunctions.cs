@@ -23,7 +23,7 @@ namespace GeneralPurposeFunctions
         public void PauseProgram()
         {
             Console.WriteLine("");
-            CenterText("Press enter to continue...");
+            CenterText("Press any key to continue...");
             Console.ReadLine();
         } // End of PauseProgram()
 
@@ -40,11 +40,8 @@ namespace GeneralPurposeFunctions
 
             do
             {
-                // Ask the user if they have any numbers to enter (Y/N)
-                //Console.WriteLine("");
-                //CenterText("Would you like to continue shopping? (Y/N)?");//REMOVE THIS AND CONDENSE WITH OTHER METHODS
+                // Validate users input is Y or N
                 whatUserTyped = CenteredInput();
-                //whatUserTyped = Console.ReadLine();
 
                 whatUserTyped = whatUserTyped.ToUpper();
 
@@ -63,6 +60,7 @@ namespace GeneralPurposeFunctions
                 else
                 {
                     getInput = true;
+                    CenterText("Please enter a valid 'Y' or 'N' value");
                 }
             } while (getInput); // Loop while we get input
 
@@ -70,91 +68,6 @@ namespace GeneralPurposeFunctions
 
         }  // End of moreInput()
 
-        /************************************************************************************
-        * Return a boolean value to indicate if the user has more inputwants to continue to view the menu
-        * ***********************************/
-        public bool moreMenu()
-        {
-            bool isThereInput = false;  // Hold teh return value 
-
-            string whatUserTyped = "";     // Hold what the user enters
-
-            bool getInput = true;   // Control the user interaction loop
-
-            do
-            {
-                // Ask the user if they have any numbers to enter (Y/N)
-                //Console.WriteLine("");
-               //CenterText("Would you like view the menu again? (Y/N)?");//REMOVE THIS AND CONDENSE WITH OTHER METHODS
-                whatUserTyped = CenteredInput();
-                //whatUserTyped = Console.ReadLine();
-
-                whatUserTyped = whatUserTyped.ToUpper();
-
-                string firstChar = whatUserTyped.Substring(0, 1);
-
-                if (firstChar == "Y")
-                {
-                    getInput = false;
-                    isThereInput = true;
-                }
-                else if (firstChar == "N")
-                {
-                    getInput = false;
-                    isThereInput = false;
-                }
-                else
-                {
-                    getInput = true;
-                }
-            } while (getInput); // Loop while we get input
-
-            return isThereInput;
-
-        }  // End of moreInput()
-
-        /************************************************************************************
-        * Return a boolean value to indicate if the user has more input wants to continue to start a new session
-        * ***********************************/
-        public bool moreSession()
-        {
-            bool isThereInput = false;  // Hold teh return value 
-
-            string whatUserTyped = "";     // Hold what the user enters
-
-            bool getInput = true;   // Control the user interaction loop
-
-            do
-            {
-                // Ask the user if they have any numbers to enter (Y/N)
-                //Console.WriteLine("");
-                //CenterText("Would you like to start another transaction? (Y/N)?");//REMOVE THIS AND CONDENSE WITH OTHER METHODS
-                whatUserTyped = CenteredInput();
-                //whatUserTyped = Console.ReadLine();
-
-                whatUserTyped = whatUserTyped.ToUpper();
-
-                string firstChar = whatUserTyped.Substring(0, 1);
-
-                if (firstChar == "Y")
-                {
-                    getInput = false;
-                    isThereInput = true;
-                }
-                else if (firstChar == "N")
-                {
-                    getInput = false;
-                    isThereInput = false;
-                }
-                else
-                {
-                    getInput = true;
-                }
-            } while (getInput); // Loop while we get input
-
-            return isThereInput;
-
-        }  // End of moreSession()
 
         /************************************************************************************
          * This method will get a numeric value from the user
@@ -174,11 +87,9 @@ namespace GeneralPurposeFunctions
             do  // do loop is used so we ask the user for a number at least once
             {
                 // Prompt the user to enter a numeric value
-                CenterText("Please enter a number");
 
                 // Get the input from the user
                 string userInput = CenteredInput();
-                //string userInput = Console.ReadLine();
 
                 try // We want to handle an Exception that might occur in this block of code
                 {
@@ -189,10 +100,8 @@ namespace GeneralPurposeFunctions
                 // catch (Exception exceptionBlock) will handle every Exception that can occur
                 catch (FormatException exceptionBlock) // Handle a FormatException in previous try block
                 {
-                    CenterText("\n----- Uh-oh Uh-oh Uh-oh ------");
-                    CenterText("There is problem with " + userInput);
-                    CenterText(exceptionBlock.Message); // Display the system message for the error
-                    CenterText("------ Uh-oh Uh-oh Uh-oh ------\n");
+                    Console.WriteLine("");
+                    CenterText("----- Please Enter a Valid number ------");
                 }
             } while (!isValidNumber); // Loop while we don't have a valid number
 
@@ -214,7 +123,9 @@ namespace GeneralPurposeFunctions
             // Print the line with leading spaces to center it
             Console.WriteLine(new string(' ', Math.Max(leftPadding, 0)) + text);
         }
-
+        /************************************************************************************
+         * Method to center-align the users cursor for centered input 
+         ***********************************************************************************/
         public string CenteredInput()
         {
             string input = "";
@@ -226,9 +137,6 @@ namespace GeneralPurposeFunctions
 
             //Capture Input
             input = Console.ReadLine();
-
-            //Center users input
-            //CenterText(input);
 
             return input;
         }
