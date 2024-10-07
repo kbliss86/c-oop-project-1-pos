@@ -1,25 +1,12 @@
-1,Apples,Fruits,Fresh and juicy apples,10.53
-2,Bananas,Fruits,Ripe bananas,19.49
-3,Carrots,Vegetables,Crunchy carrots,18.54
-4,Broccoli,Vegetables,Fresh broccoli florets,2.92
-5,Chicken Breast,Meat,Boneless chicken breast,8.04
-6,Ground Beef,Meat,Lean ground beef,5.56
-7,Salmon,Seafood,Fresh Atlantic salmon,10.92
-8,Shrimp,Seafood,"Raw shrimp peeled",2.46
-9,Eggs,Dairy,Free-range eggs,17.73
-10,Milk,Dairy,Whole milk,11.6
-11,Bread,Bakery,Freshly baked bread,19.87
-12,Rice,Grains,Long grain rice,19.19
-13,Pasta,Grains,Spaghetti pasta,19.61
-14,Tomato Sauce,Pantry,Rich tomato sauce,3.07
-15,Cheddar Cheese,Dairy,Sharp cheddar cheese,13.35
-16,Yogurt,Dairy,Low-fat yogurt,12.7
-17,Butter,Dairy,Unsalted butter,16.03
-18,Olive Oil,Pantry,Extra virgin olive oil,3.38
-19,Salt,Pantry,Fine sea salt,17.84
-20,Pepper,Pantry,Ground black pepper,1.14
-21,Oatmeal,Breakfast,Whole grain oatmeal,1.39
-22,Cereal,Breakfast,Assorted breakfast cereals,13.73
-23,Peanut Butter,Pantry,Creamy peanut butter,14.47
-24,Jam,Pantry,Fruit jam,17.99
-25,Orange Juice,Beverages,Freshly squeezed orange juice,12.17
+1,Buffalo,Mild,"Mild Buffalo, made with jalepenos and bell pepper",10.00
+2,Hot Buffalo,Medium,"Medium Hot Buffalo, made with jalepenos and Fresno",12.00
+3,Thai Ginger,Mild,"Mild Thai Ginger, Thai Chilies, Ginger, Soy Sauce",10.00
+4,Peach Habernero,Medium,"Medium Peach Habernero, Made with Habeneros and Peaches for sweet heat",12.00
+5,Mango Habernero,Medium,"Medium Mango Habernero, Made with Haberneros and Mangos for sweet heat",12.00
+6,Ghost Pineapple,Hot,"Hot Ghost Pineapple, Made with Ghost Peppers and Pineapples, red onions",14.00
+7,Garlic Reaper,Super Hot,"Super Hot Garlic Reaper, Carolina Reaper, Garlic, Onions, Vinegor",16.00
+8,Smoked Fresno,Medium,"Medium Smoked Fresno,Made with  Smoked Fresno, Onions, Vinegar",12.00
+9,Louisiana-Tabasco,Medium,"Medium Louisiana-Tabasco, Made with Cayenne Pepepers, Onions and garic",12.00
+10,Lantern-Plumb Chile Sauce,Hot,"Hot Lantern-Plumb Chile Sauce, Made with Hainan Yellow lanterns. Yellow Bell, Red Onions, Chinese 5 spince and Gralic",14.00
+11,Chipotle,Hot,"Hot Chipotle, Made with Jalepeno Peppers, Chipotle Peppers, Onions, Vinegar",14.00
+12,Monster-Mash,Super Hot,"Super Hot Monster-Mash, Made with Bleeding Jigsaw Peppers, Pure HEAT 1 Million Scoville!",16.00
